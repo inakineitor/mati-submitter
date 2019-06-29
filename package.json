@@ -2,7 +2,7 @@
 	"name": "mati-submitter",
 	"displayName": "mati-submitter",
 	"description": "An extension that automatically submits the current project to Mati's system.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/inakineitor/mati-submitter.git"

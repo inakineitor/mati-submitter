@@ -5,7 +5,7 @@ This extension allows you to submit to the correction server all the files in th
 Call the command Submit Mati TP and see the magic happen.
 
 ## Requirements
-Configuring both extension settings is required. The firs time you use the command it will ask you for them and set them forever.
+Configuring both extension settings is required. The first time you use the command it will ask you for them and set them forever.
 Of course, it can be changed from the Visual Studio Code configuration file whenever one wants.
 
 **You must have successfully completed the following step for the extension to work correctly**
