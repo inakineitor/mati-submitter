@@ -1,0 +1,62 @@
+{
+	"name": "mati-submitter",
+	"displayName": "mati-submitter",
+	"description": "An extension that automatically submits the current project to Mati's system.",
+	"version": "0.0.1",
+	"publisher": "inakineitor",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:mati-submitter.matiSubmit"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "mati-submitter.matiSubmit",
+				"title": "Submit Mati TP"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Mati Submitter Configuration",
+			"properties": {
+				"mati-submitter.email": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "The email address used to send the email."
+				},
+				"mati-submitter.dni": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "The DNI number used in the email subject."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"nodemailer": "^6.2.1",
+		"zip-dir": "^1.0.2"
+	}
+}
